@@ -1,6 +1,6 @@
 # Algorithms & Data Structures (Leetcode)
 
-    Text&nbsp;&nbsp;&nbsp;More Text
+<br>
 
 ## Arrays & Strings:
 ### Reverse String
@@ -11,7 +11,7 @@
 ### Minimum Value to Get Positive Step by Step
 ### K Radius Subarray Averages
 
-    Text&nbsp;&nbsp;&nbsp;More Text
+<br>
 
 ## Hashing:
 ### Check if the Sentence Is Pangram
@@ -25,14 +25,14 @@
 ### Jewels and Stones
 ### Longest Substring Without Repeating Characters
 
-    Text&nbsp;&nbsp;&nbsp;More Text
+<br>
 
 ## Linked Lists:
 ### Middle of the Linked List
 ### Remove Duplicates from Sorted List
 ### Reverse Linked List II
 
-    Text&nbsp;&nbsp;&nbsp;More Text
+<br>
 
 ## Stacks & Queues:
 ### Simplify Path
