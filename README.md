@@ -1,5 +1,7 @@
 # Algorithms & Data Structures (Leetcode)
 
+    Text&nbsp;&nbsp;&nbsp;More Text
+
 ## Arrays & Strings:
 ### Reverse String
 ### Squares of a Sorted Array
@@ -8,6 +10,8 @@
 ### Running Sum of 1D Array
 ### Minimum Value to Get Positive Step by Step
 ### K Radius Subarray Averages
+
+    Text&nbsp;&nbsp;&nbsp;More Text
 
 ## Hashing:
 ### Check if the Sentence Is Pangram
@@ -21,10 +25,14 @@
 ### Jewels and Stones
 ### Longest Substring Without Repeating Characters
 
+    Text&nbsp;&nbsp;&nbsp;More Text
+
 ## Linked Lists:
 ### Middle of the Linked List
 ### Remove Duplicates from Sorted List
 ### Reverse Linked List II
+
+    Text&nbsp;&nbsp;&nbsp;More Text
 
 ## Stacks & Queues:
 ### Simplify Path
