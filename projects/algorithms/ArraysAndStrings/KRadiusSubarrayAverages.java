@@ -21,25 +21,23 @@ public class KRadiusSubarrayAverages {
 
     public int[] getAverages(int[] nums, int k) {
 
-        int[] sums = new int[nums.length];
+        long[] sums = new long[nums.length];
         int[] avgs = new int[nums.length];
-        int sum = 0;
+        long sum = 0;
 
-        // make prefix sum array
 
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
             sums[i] = sum;
         }
 
-        //use prefix sum array to determine avgs array (subtract, divide).
 
         for (int i = 0; i < nums.length ; i++) {
             if (i < k || nums.length - i <= k){
                 avgs[i] = -1;
             }
             else{
-                avgs[i] = (sums[i + k] - sums[i-k] + nums[i-k])/(2*k + 1);
+                avgs[i] = (int)((sums[i + k] - sums[i-k] + nums[i-k])/(2*k + 1));
             }
         }
 
