@@ -44,7 +44,20 @@
 <br>
 
 ## Trees & Graphs:
-
+### Minimum Depth of Binary Tree
+### Maximum Difference Between Node and Ancestor
+### Diameter of Binary Tree
+### Deepest Leaves Sum
+### Binary Tree Zigzag Level Order Traversal
+### Insert into a Binary Search Tree
+### Closest Binary Search Tree Value
+### Find if Path Exists in Graph
+### Number of Connected Components in an Undirected Graph
+### Max Area of Island
+### Reachable Nodes With Restrictions
+### Nearest Exit from Entrance in Maze
+### Minimum Genetic Mutation
+### Jump Game III
 
 
 
