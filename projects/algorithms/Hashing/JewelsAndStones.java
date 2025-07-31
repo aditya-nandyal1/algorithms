@@ -15,13 +15,13 @@ public class JewelsAndStones {
     */
 
     public int numJewelsInStones(String jewels, String stones) {
-        Set<String> records = new HashSet<>();
+        Set<Character> records = new HashSet<>();
         int counter = 0;
         for (int i = 0; i < jewels.length(); i++) {
-            records.add(jewels.substring(i, i+1));
+            records.add(jewels.charAt(i));
         }
         for (int i = 0; i < stones.length(); i++) {
-            if (records.contains(stones.substring(i, i+1))) {
+            if (records.contains(stones.charAt(i))) {
                 counter++;
             }
         }
