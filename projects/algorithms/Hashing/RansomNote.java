@@ -15,19 +15,19 @@ public class RansomNote {
     */
 
     public boolean canConstruct(String ransomNote, String magazine) {
-        Map<String, Integer> magLets = new HashMap<>();
+        Map<Character, Integer> magLets = new HashMap<>();
 
         for (int i = 0; i < magazine.length(); i++){
-            magLets.put(magazine.substring(i, i+1), magLets.getOrDefault(magazine.substring(i, i+1), 0) + 1);
+            magLets.put(magazine.charAt(i), magLets.getOrDefault(magazine.charAt(i), 0) + 1);
         }
 
         for (int i = 0; i < ransomNote.length(); i++){
-            if (!magLets.containsKey(ransomNote.substring(i, i+1)) || magLets.get(ransomNote.substring(i, i+1)) == 0) {
+            if (!magLets.containsKey(ransomNote.charAt(i)) || magLets.get(ransomNote.charAt(i)) == 0) {
                 return false;
 
             }
             else{
-                magLets.put(ransomNote.substring(i, i+1), magLets.get(ransomNote.substring(i, i+1)) - 1);
+                magLets.put(ransomNote.charAt(i), magLets.get(ransomNote.charAt(i)) - 1);
             }
         }
 

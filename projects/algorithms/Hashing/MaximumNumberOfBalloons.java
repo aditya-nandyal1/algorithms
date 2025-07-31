@@ -10,10 +10,9 @@ public class MaximumNumberOfBalloons {
     Return the maximum number of instances that can be formed.
     */
 
-    /* Solution: Create a map to keep track of the frequency of letters in text. If the map does not
-    contain any of the letters in "balloon", return 0. Otherwise, determine the limiting letter and
-    return how many instances of "balloon" it can form (remember that "l" and "o" each appear in
-    "balloon" twice).
+    /* Solution: Create integer variables to keep track of the frequency of "balloon" letters in
+    text while looping through it. Then, determine the limiting letter and return how many instances
+    of "balloon" it can form (remember that "l" and "o" each appear in "balloon" twice).
     */
 
     public int maxNumberOfBalloons(String text) {

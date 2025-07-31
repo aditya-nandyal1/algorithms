@@ -13,16 +13,16 @@ public class LongestSubstringWithoutRepeating {
     */
 
     public int lengthOfLongestSubstring(String s) {
-        Set<String> records = new HashSet<>();
+        Set<Character> records = new HashSet<>();
         int longestSub = 0;
         int r = 0;
         int l = 0;
         while (r < s.length()) {
-            while (l < r && records.contains(s.substring(r, r+1))) {
-                records.remove(s.substring(l, l+1));
+            while (l < r && records.contains(s.charAt(r))) {
+                records.remove(s.charAt(l));
                 l++;
             }
-            records.add(s.substring(r, r+1));
+            records.add(s.charAt(r));
             longestSub = Math.max(longestSub, r-l+1);
             r++;
         }
