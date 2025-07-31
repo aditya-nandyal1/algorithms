@@ -17,23 +17,33 @@ public class MaximumNumberOfBalloons {
 
     public int maxNumberOfBalloons(String text) {
 
-        Map<String, Integer> records = new HashMap<>();
+        int bCount = 0;
+        int aCount = 0;
+        int lCount = 0;
+        int oCount = 0;
+        int nCount = 0;
         for (int i = 0; i < text.length(); i++){
-            if(records.containsKey(text.substring(i, i+1))){
-                records.put(text.substring(i, i+1), records.get(text.substring(i, i+1)) + 1);
+            if (text.charAt(i) == 'b'){
+                bCount++;
             }
-            else{
-                records.put(text.substring(i, i+1), 1);
+            else if (text.charAt(i) == 'a'){
+                aCount++;
+            }
+            else if (text.charAt(i) == 'l'){
+                lCount++;
+            }
+            else if (text.charAt(i) == 'o'){
+                oCount++;
+            }
+            else if (text.charAt(i) == 'n'){
+                nCount++;
             }
         }
 
-        if (records.get("b") == null || records.get("a") == null || records.get("l") == null || records.get("o") == null || records.get("n") == null){
-            return 0;
-        }
 
-        int temp = Math.min(Math.min(records.get("b")/1, records.get("a")/1), Math.min(records.get("l")/2, records.get("o")/2));
+        int temp = Math.min(Math.min(bCount/1, aCount/1), Math.min(lCount/2, oCount/2));
 
-        return Math.min(temp, records.get("n"));
+        return Math.min(temp, nCount);
 
     }
 
